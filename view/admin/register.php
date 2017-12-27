@@ -1,5 +1,5 @@
 <div class="middle-container center">
-  <form action="?page=action_login" method="post">
+  <form action="?page=action_create_user" method="post">
     <h2>Registration Page</h2>
     <div>
       <b>Username : </b><br>

@@ -14,6 +14,7 @@ if (isset($_GET['page'])) {
   
   if ($_GET['page'] == 'action_logout')           { include "models/logout.php"; }
   if ($_GET['page'] == 'action_login')            { include "models/login.php"; }
+  if ($_GET['page'] == 'action_create_user')      { include "models/create_user.php"; }
   if ($_GET['page'] == 'action_create_news')      { include "models/create_news.php"; }
   if ($_GET['page'] == 'action_edit_news')        { include "models/edit_news.php"; }
   if ($_GET['page'] == 'action_delete_news')      { include "models/delete_news.php"; }
