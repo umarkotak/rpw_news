@@ -17,5 +17,10 @@
 
 <div class="center">
   <br>
-  <a href="?page=home&all=true">Show More</a>
+  <?php if (isset($_GET['p'])) { $p = $_GET['p']; } else { $p = 1; } ?>
+  <?php if ($p > 1) { $prev = $p - 1; } else { $prev = 1; } ?>
+  <?php $next = $p + 1; ?>
+  <a href="?page=home&p=<?php echo $prev; ?>">Prev</a> | 
+  <a href="?page=home&all=true">Show More</a> | 
+  <a href="?page=home&p=<?php echo $next; ?>">Next</a>
 </div>
